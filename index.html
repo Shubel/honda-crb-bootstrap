@@ -20,10 +20,10 @@
   <body>
     <!-- header start -->
     <header>
-      <section class="container">
+      <section class="container-fluid bg-secondary">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+          <div class="container-fluid my-4">
             <button
               class="navbar-toggler"
               type="button"
@@ -46,22 +46,27 @@
                 "
               >
                 <li class="nav-item">
-                  <a class="nav-link active mx-3" aria-current="page" href="#"
+                  <a
+                    class="nav-link active mx-3 text-white"
+                    aria-current="page"
+                    href="#"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active mx-3" href="#">Shop</a>
+                  <a class="nav-link active mx-3 text-white" href="#">Shop</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active mx-3" href="#">News</a>
+                  <a class="nav-link active mx-3 text-white" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active mx-3" href="#">Contact</a>
+                  <a class="nav-link active mx-3 text-white" href="#"
+                    >Contact</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active mx-5" href="#"
-                    ><button class="btn btn-warning btn-lg text-white">
+                    ><button class="btn btn-warning btn-lg text-white px-4">
                       Login
                     </button></a
                   >
@@ -70,21 +75,102 @@
             </div>
           </div>
         </nav>
-        <!-- bike profile -->
-        <div>
-          <p class="fw-light">
-            Computer-controlled digital transistorized with electronic advance
-          </p>
-          <h1 class="fw-bold">Honda CBR 300R</h1>
-          <p class="fw-light">
-            Amet minim mollit non deserunt ullamco est sit aliqua
-            <br />
-            dolor do amet sint. Velit officia consequat duis enim velit
-            <br />
-            mollit. Exercitation veniam consequat sunt nostrud amet.
-          </p>
+        <!-- bike profile start -->
+        <div class="row">
+          <div class="container col-md-5 my-5">
+            <p class="fw-light text-white-50">
+              Computer-controlled digital transistorized with electronic advance
+            </p>
+            <h1 class="fw-bold text-white">Honda CBR 300R</h1>
+            <p class="fw-light text-white-50 mt-4">
+              Amet minim mollit non deserunt ullamco est sit aliqua
+              <br />
+              dolor do amet sint. Velit officia consequat duis enim velit
+              <br />
+              mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <!-- modal start -->
+            <button
+              type="button"
+              class="btn btn-warning btn-lg text-white px-5 mt-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"
+            >
+              Purchase
+            </button>
+            <div
+              class="modal fade bg-danger"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bg-success">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">
+                      Honda CBR Help-Line
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="user-number"
+                          class="col-form-label text-white"
+                          >Number:</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="user-number"
+                          placeholder="Enter Your Number"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="message-text"
+                          class="col-form-label text-white"
+                          >Message:</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message-text"
+                          placeholder="Write a message"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-warning text-white">
+                      Send message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal end -->
+          </div>
+          <!-- bike profile end -->
+          <!-- header bike image -->
+          <div class="col-md-5">
+            <img class="img-fluid my-5" src="images/header-bike.png" alt="" />
+          </div>
         </div>
-        <img src="images/header-bike.png" alt="" />
       </section>
     </header>
     <!-- bootstrap js file -->
