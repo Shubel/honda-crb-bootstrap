@@ -1,3 +1,15 @@
+.bg-color {
+  background-color: #264653;
+}
+.btn-color {
+  background-color: #e76f51;
+}
+.text-color {
+  color: #e76f51;
+}
+.btn-outline-warning {
+  color: #e76f51;
+}
 .grayscale {
   filter: grayscale(100%);
 }
@@ -6,7 +18,7 @@
   width: 149px;
 }
 .color {
-  color: yellow;
+  color: #e76f51;
   height: 19px;
   width: 19px;
 }
