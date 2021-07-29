@@ -1,0 +1,12 @@
+.grayscale {
+  filter: grayscale(100%);
+}
+.img-round {
+  height: 149px;
+  width: 149px;
+}
+.color {
+  color: yellow;
+  height: 19px;
+  width: 19px;
+}
